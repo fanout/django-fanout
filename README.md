@@ -7,7 +7,7 @@ Fanout.io library for Python/Django.
 Requirements
 ------------
 
-* pyfanout
+* fanout
 
 Install
 -------
