@@ -7,7 +7,4 @@ if hasattr(settings, 'FANOUT_KEY'):
 	fanout.key = settings.FANOUT_KEY
 
 def publish(channel, data, id=None, prev_id=None, blocking=False, callback=None):
-	if blocking:
-		fanout.publish(channel, data, id, prev_id)
-	else:
-		fanout.publish_async(channel, data, id, prev_id, callback)
+	fanout.publish(channel, data, id, prev_id, blocking, callback)
