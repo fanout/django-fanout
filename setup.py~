@@ -11,7 +11,7 @@ author_email='justin@fanout.io',
 url='https://github.com/fanout/django-fanout',
 license='MIT',
 py_modules=['django_fanout'],
-install_requires=['fanout>=1.1.0'],
+install_requires=['fanout>=1.0.3'],
 classifiers=[
 	'Topic :: Utilities',
 	'License :: OSI Approved :: MIT License'

@@ -7,6 +7,6 @@ if hasattr(settings, 'FANOUT_KEY'):
 	fanout.key = settings.FANOUT_KEY
 
 def publish(channel, data, id=None, prev_id=None, blocking=False, callback=None,
-		realm=None, key=None, ssl=True):
-	fanout.publish(channel, data, id, prev_id, blocking, callback, realm,
-			key, ssl)
+		pub_realm=None, pub_key=None, pub_ssl=True):
+	fanout.publish(channel, data, id, prev_id, blocking, callback, pub_realm,
+			pub_key, pub_ssl)
